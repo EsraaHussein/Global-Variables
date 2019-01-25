@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Global Variables</title>
+</head>
+<body>
+        <form action=" ">
+                1st Number :<input type="text" id="firstNumber" ></br>
+                2nd Number :<input type="text" id="SecondNumber"></br>
+                <button onClick="multiplyBy()" type="button" name="multiply">Multiple</button>
+                <button onClick="divideBy()" type="button" name="divide">Divide</button></br>
+                <label>The Result :</label>
+            </form>
+
+            <span id="result"></span>
+
+            <script>
+
+                 var num1 =document.getElementById("firstNumber");
+                 var num2 = document.getElementById("SecondNumber");
+
+                function multiplyBy(){
+
+                  document.getElementById("result").innerHTML =  num1.value *  num2.value;
+
+                }
+
+               function divideBy(){
+
+                 document.getElementById("result").innerHTML =  num1.value  /  num2.value;
+               }
+
+            </script>
+</body>
+</html>
